@@ -1,0 +1,83 @@
+
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+.Dashboard {
+    margin-top: 10px;
+
+
+  }
+  .header{
+    background: antiquewhite;
+  }
+  .item {
+    width: 32%;
+    padding: 5%; /* 32:18, i.e. 16:9 */
+    margin-bottom: 2%; /* (100-32*3)/2 */
+    box-shadow: 2px 3px 3px rgba(0,0,0,0.2);
+
+  }
+  .card {
+    width: 32%;
+    padding: 5%; /* 32:18, i.e. 16:9 */
+    margin-bottom: 2%; /* (100-32*3)/2 */
+
+  }
+
+  .error{
+
+  }
+  .graphs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+  .header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+  .weatherIcon{
+    flex: 1 100%;
+    height: 60%;
+    border-top-left-radius: 3;
+    border-top-right-radius:3;
+    font-family: weathericons;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 40px;
+    
+  }
+
+
+/* starting ENTER animation */
+.fade-enter {
+    opacity: 0.01;
+  }
+  
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+  
+  .fade-leave {
+    opacity: 1;
+  }
+  
+  .fade-leave.fade-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+  }
+
+  
+  @media (max-width: 600px) {
+    .graphs,header {
+      flex-flow:column ;
+    }
+    .item{
+      width:98%;  
+    }
+  }
